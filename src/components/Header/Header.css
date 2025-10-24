@@ -1,0 +1,55 @@
+/* --- Header --- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #374151; /* gray-700 */
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  color: #fff;
+}
+
+.header-title svg {
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #3b82f6; /* blue-500 */
+}
+
+/* --- Add Contact Button --- */
+.add-contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #2563eb; /* blue-600 */
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-contact-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.add-contact-btn:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.add-contact-btn:active {
+  transform: scale(0.98);
+}
+

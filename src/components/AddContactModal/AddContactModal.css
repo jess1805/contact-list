@@ -1,0 +1,148 @@
+/* --- Add Contact Modal --- */
+
+/* Backdrop: Full screen, semi-transparent black */
+.modal-backdrop {
+  position: fixed;
+  inset: 0; /* (top, right, bottom, left = 0) */
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.15s ease-out;
+}
+
+/* Modal Content: The white box in the middle */
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* 500px wide */
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #1f2937; /* gray-800 */
+  border-radius: 0.75rem;
+  border: 1px solid #374151; /* gray-700 */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  animation: slideUp 0.2s ease-out;
+}
+
+.modal-content h2 {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* Close button (the 'X') */
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem;
+  color: #9ca3af; /* gray-400 */
+  background: none;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.modal-close-btn:hover {
+  color: #fff;
+  background-color: #374151; /* gray-700 */
+}
+
+/* Error message box */
+.modal-error {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #991b1b; /* red-800 */
+  color: #fee2e2; /* red-100 */
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d1d5db; /* gray-300 */
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #374151; /* gray-700 */
+  color: #fff;
+  border: 1px solid #4b5563; /* gray-600 */
+  border-radius: 0.375rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 2px #2563eb; /* blue-600 */
+}
+
+/* Form buttons (Cancel, Save) */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.form-btn {
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.form-btn.cancel {
+  background-color: #4b5563; /* gray-600 */
+  color: #fff;
+}
+
+.form-btn.cancel:hover {
+  background-color: #6b7280; /* gray-500 */
+}
+
+.form-btn.submit {
+  background-color: #2563eb; /* blue-600 */
+  color: #fff;
+}
+
+.form-btn.submit:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.form-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

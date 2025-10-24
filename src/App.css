@@ -1,0 +1,80 @@
+/* === GLOBAL RESETS === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a; /* deep navy */
+  color: #fff;
+}
+
+/* === ROOT LAYOUT === */
+.app-root {
+  display: grid;
+  grid-template-columns: 380px 1fr; /* Sidebar + Main area */
+  height: 100vh;
+  width: 100%;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #111827; /* gray-900 */
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-right: 1px solid #1f2937;
+  overflow-y: auto;
+}
+
+/* === MAIN CONTENT === */
+.main-content {
+  background-color: #1e293b; /* dark navy */
+  height: 100%;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* === CONTACT LIST SCROLLBAR === */
+.contact-list {
+  max-height: calc(100vh - 280px);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.contact-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contact-list::-webkit-scrollbar-thumb {
+  background-color: #374151; /* gray-700 */
+  border-radius: 4px;
+}
+
+.contact-list::-webkit-scrollbar-track {
+  background-color: #1f2937; /* gray-800 */
+  border-radius: 4px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .app-root {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #1f2937;
+  }
+
+  .main-content {
+    padding: 1.5rem;
+  }
+}
