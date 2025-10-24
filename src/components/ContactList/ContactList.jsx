@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactCard from '../ContactCard/ContactCard'; // Import child component
+import ContactCard from '../ContactCard/ContactCard'; 
 import { AlertCircle } from 'lucide-react';
 import './ContactList.css';
 

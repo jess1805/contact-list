@@ -8,17 +8,17 @@
   width: 100%;
   padding: 1rem;
   padding-left: 3rem;
-  font-size: 1.125rem; /* 18px */
-  background-color: #1f2937; /* gray-800 */
+  font-size: 1.125rem; 
+  background-color: #1f2937; 
   color: #fff;
-  border: 2px solid #374151; /* gray-700 */
+  border: 2px solid #374151;
   border-radius: 0.5rem;
   transition: border-color 0.2s;
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #3b82f6; /* blue-500 */
+  border-color: #3b82f6; 
 }
 
 .search-icon {
@@ -28,6 +28,6 @@
   transform: translateY(-50%);
   width: 1.5rem;
   height: 1.5rem;
-  color: #6b7280; /* gray-400 */
+  color: #6b7280; 
 }
 

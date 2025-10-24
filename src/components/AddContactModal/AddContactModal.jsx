@@ -12,27 +12,25 @@ function AddContactModal({ onClose, onAddContact }) {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Basic validation
     if (!name || !email || !phone) {
       setError('All fields are required.');
       return;
     }
     setError('');
-    // Pass the new contact up to the App component
+   
     onAddContact({ name, email, phone });
-    onClose(); // Close the modal after successful submission
+    onClose(); 
   };
 
   return (
-    // Backdrop
     <div 
       className="modal-backdrop"
-      onClick={onClose} // Close modal when clicking backdrop
+      onClick={onClose} 
     >
       {/* Modal Content */}
       <div
         className="modal-content"
-        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+        onClick={(e) => e.stopPropagation()} 
       >
         <button
           onClick={onClose}

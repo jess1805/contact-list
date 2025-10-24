@@ -34,7 +34,7 @@ function App() {
       </div>
 
       <div className="main-content">
-        {/* Optional: future right-side area (empty for now) */}
+        {/* Main content can go here if needed */}
       </div>
 
       {isModalOpen && (

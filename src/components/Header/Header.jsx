@@ -1,6 +1,6 @@
 import React from 'react';
 import { Plus, UserPlus } from 'lucide-react';
-import './Header.css'; // Import component-specific styles
+import './Header.css'; 
 
 function Header({ onAddContactClick }) {
   return (

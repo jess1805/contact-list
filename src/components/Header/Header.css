@@ -5,14 +5,14 @@
   justify-content: space-between;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #374151; /* gray-700 */
+  border-bottom: 2px solid #374151; 
 }
 
 .header-title {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 2.25rem; /* 36px */
+  font-size: 2.25rem; 
   font-weight: 700;
   color: #fff;
 }
@@ -20,16 +20,16 @@
 .header-title svg {
   width: 2.25rem;
   height: 2.25rem;
-  color: #3b82f6; /* blue-500 */
+  color: #3b82f6; 
 }
 
-/* --- Add Contact Button --- */
+
 .add-contact-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
-  background-color: #2563eb; /* blue-600 */
+  background-color: #2563eb; 
   color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -46,7 +46,7 @@
 }
 
 .add-contact-btn:hover {
-  background-color: #1d4ed8; /* blue-700 */
+  background-color: #1d4ed8;
 }
 
 .add-contact-btn:active {
